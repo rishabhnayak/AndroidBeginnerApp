@@ -3,6 +3,7 @@ package com.example.androidbeginnerapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,10 +15,21 @@ public class EditTextActivity extends AppCompatActivity {
     EditText nameedittext,passwordedittext;
     Button button;
     String name,password;
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor myEdit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout._8_edittext);
+        sharedPreferences = getSharedPreferences("login", MODE_PRIVATE);
+        myEdit = sharedPreferences.edit();
+//      //add cache
+//        myEdit.putString("name","rishabh");
+//        myEdit.commit();
+//
+//        //get cache
+//      name =  sharedPreferences.getString("name",null);
+
         getSupportActionBar().hide();
         inti();
 
@@ -27,6 +39,18 @@ public class EditTextActivity extends AppCompatActivity {
                 getValue();
             }
         });
+
+
+       String dataavail =  sharedPreferences.getString("name","null");
+
+       if (dataavail.equals("null")){
+           Toast.makeText(this, "cache not avail", Toast.LENGTH_SHORT).show();
+       }else {
+           Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+           startActivity(intent);
+           finish();
+       }
+
 
 
     }
@@ -41,10 +65,13 @@ public class EditTextActivity extends AppCompatActivity {
         name = nameedittext.getText().toString();
         password= passwordedittext.getText().toString();
 
-
-
         if (name.equals("rishabh")&&password.equals("12345")){
             Toast.makeText(this, "login success", Toast.LENGTH_SHORT).show();
+
+            myEdit.putString("name",name);
+            myEdit.putString("password",password);
+            myEdit.commit();
+
             //intent
             Intent intent=new Intent(getApplicationContext(),MainActivity.class);
             intent.putExtra("name",name);
