@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -14,6 +15,7 @@ public class SwitchActivity extends AppCompatActivity {
     Switch toggle;
     TextView toggleText;
     ImageView imageView;
+    EditText editText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ public class SwitchActivity extends AppCompatActivity {
         toggle=findViewById(R.id.toggle_switch);
         toggleText=findViewById(R.id.toggle_text);
         imageView=findViewById(R.id.background);
+        editText=findViewById(R.id.name);
 
 
         imageView.setBackground(getResources().getDrawable(R.drawable.background2));
@@ -58,4 +61,9 @@ public class SwitchActivity extends AppCompatActivity {
         imageView.setBackground(getResources().getDrawable(R.drawable.background2));
         toggleText.setTextColor(getResources().getColor(R.color.white));
     }
+
+    public void getMethodsEdittext(){
+
+    }
+
 }
