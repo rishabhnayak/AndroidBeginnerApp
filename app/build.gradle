@@ -35,5 +35,8 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//Lottie Depen.
     implementation 'com.airbnb.android:lottie:3.0.5'
+//Textview Dependency
+    implementation 'com.github.natiginfo:EasyFont:v1.0.6'
 }

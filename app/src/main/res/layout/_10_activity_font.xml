@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FontActivity">
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.koonat.easyfont.TextView
+        android:id="@+id/text"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:text="Hello World"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font_path="font/font.ttf"
+        />
+
+    <com.koonat.easyfont.Button
+        android:onClick="datePicker"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:text="Date Picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font_path="font/font.ttf"
+        />
+    <com.koonat.easyfont.EditText
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:text="Hello World"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font_path="font/font.ttf"
+        />
+    <com.koonat.easyfont.RadioButton
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:text="Hello World"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font_path="font/font.ttf"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>
