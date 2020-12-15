@@ -12,15 +12,13 @@ import android.widget.Toast;
 
 public class SpinnerActivity extends AppCompatActivity {
     Spinner spinner;
-
     String[] city={"Raipur","Tilda","Bilaspur","Durg"};
-
     String selectedValue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spinner);
 
+        setContentView(R.layout.activity_spinner);
         spinner =  findViewById(R.id.spinner);
 
         //spinner adapter

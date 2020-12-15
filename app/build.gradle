@@ -39,4 +39,9 @@ dependencies {
     implementation 'com.airbnb.android:lottie:3.0.5'
 //Textview Dependency
     implementation 'com.github.natiginfo:EasyFont:v1.0.6'
+
+//imp. api fetch
+//Gson dependency
+    implementation 'com.google.code.gson:gson:2.8.6'
+
 }
