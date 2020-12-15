@@ -18,7 +18,7 @@ public class FontActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout._10_activity_font);
-       textView = findViewById(R.id.text);
+        textView = findViewById(R.id.text);
     }
 
     public void datePicker(View view) {
