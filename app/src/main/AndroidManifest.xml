@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.androidbeginnerapp">
     <!-- to access internet -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,42 +11,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidBeginnerApp">
-        <activity android:name=".ApiActivity3">
+        android:theme="@style/Theme.AndroidBeginnerApp"
+        tools:replace="android:icon">
+        <activity android:name=".ButtonClicker">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".ApiActivity2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".ApiActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".LifeCycleActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".SpinnerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".FontActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ApiActivity4"></activity>
+        <activity android:name=".ApiActivity3"></activity>
+        <activity android:name=".ApiActivity2"></activity>
+        <activity android:name=".ApiActivity"></activity>
+        <activity android:name=".SpinnerActivity"></activity>
+        <activity android:name=".FontActivity"></activity>
         <activity android:name=".RadioButtonActivity" />
         <activity android:name=".SwitchActivity" />
         <activity
