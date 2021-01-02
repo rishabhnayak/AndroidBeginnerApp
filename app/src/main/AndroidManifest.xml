@@ -13,6 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBeginnerApp"
         tools:replace="android:icon">
+        <activity android:name=".ApiActivity6">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ApiActivity5">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LifeCycleActivity"></activity>
+        <activity android:name=".LifeCycleActivity" />
         <activity android:name=".ApiActivity4" />
         <activity android:name=".ApiActivity3" />
         <activity android:name=".ApiActivity2" />

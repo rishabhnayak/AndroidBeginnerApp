@@ -45,6 +45,8 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
 //volley dependency
     implementation 'com.android.volley:volley:1.1.1'
-//
+//sweet alert library
     implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+//Image Downloading Library
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
